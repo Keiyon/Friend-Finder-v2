@@ -29,7 +29,7 @@ var PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
-require(".app/routing/apiRoutes")(app);
+require("./routing/apiRoutes")(app);
 require("./routing/htmlRoutes")(app);
 
 app.listen(PORT, function () {
